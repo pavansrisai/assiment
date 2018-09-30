@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a + b;
+document.getElementById("answer").value= c;
+}
+function sub(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a - b;
+document.getElementById("answer").value= c;
+}
+function mul(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a * b;
+document.getElementById("answer").value= c;
+}
+</script>
+</head>
+<body style="background-color:orange">
+Enter the First number : <input id="first">
+<br>
+Enter the Second number: <input id="second">
+<br>
+enter your options:<button onclick="add()">Add</button>
+<button onclick="sub()">sub</button>
+<button onclick="mul()">mul</button>
+<br>
+<input id="answer">
+</body>
+</html>
